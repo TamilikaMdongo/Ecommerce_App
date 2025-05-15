@@ -1,7 +1,7 @@
 
 
-import Apple from './download (5).jpg'
-import Apple1 from './download.jpg'
+import Apple from './assets/download (5).jpg'
+import Apple1 from './assets/download.jpg'
 
 
   

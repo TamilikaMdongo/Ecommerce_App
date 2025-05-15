@@ -1,21 +1,22 @@
 import React from 'react'
+import Card from './Card'
 
-const Category = () => {
+const Category = ({list}) => {
+  console.log({list});
   return (
     <div className='Category'>
-        <h1>Category</h1>
+        <h1>Shop Now</h1>
+       <div className='Cards'>
+        {list?.map((items, i)=>{
+            return <Card
+             
+              image = {items.image}
+              title = {items.title}
+              price = {items.price}
+            />
+        })}
+        </div>
        
-        <ul>
-           
-            <li> <div className='cell'>
-                Cell
-                <button className='btn'> Browse now</button>
-                </div> 
-                 </li>
-            <li>  <div className='laptops'> laptops <button className='btn1'>Browse now</button> </div>  </li>
-            <li>   <div className='consoles'>Consoles <button className='btn2'>Browse now</button></div> </li>
-            <li>  <div className='accessories'>accessories <button className='btn3'>Browse now</button></div> </li>
-        </ul>
     </div>
   )
 }
